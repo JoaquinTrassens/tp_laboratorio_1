@@ -1,6 +1,6 @@
 /*
  * funciones.h
- *
+ * aqui se encuentran los prototipos de las operaciones de la calculadora
  *  Created on: 24 sep. 2021
  *      Author: Joaquin
  */
@@ -12,6 +12,7 @@ int sumar(int primerOperando, int segundoOperando);
 int restar(int primerOperando, int segundoOperando);
 float dividir(int primerOperando, int segundoOperando);
 int multiplicar(int primerOperando, int segundoOperando);
+int factorial(int numero);
 
 
 
