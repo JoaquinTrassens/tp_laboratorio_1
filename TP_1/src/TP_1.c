@@ -20,7 +20,7 @@ int main()
     int numero2;
     int suma;
     int resta;
-    int division;
+    float division;
     int multiplicacion;
     do{
     printf("\t MENU DE OPCIONES \n");
@@ -40,7 +40,7 @@ int main()
             printf("**OPERACIONES**\n");
             printf("calcular la suma de %d+%d\n",numero,numero2);
             printf("calcular la resta de %d-%d\n",numero,numero2);
-            printf("calcular la division de %d/%d\n",numero,numero2);
+            printf("calcular la division de %f/%f\n",numero,numero2);
             printf("calcular la multiplicacion de %d*%d\n",numero,numero2);
             suma=sumar(numero,numero2);
             resta=restar(numero,numero2);
@@ -51,7 +51,11 @@ int main()
             printf("**Informacion de resultados**\n");
             printf("el resultado del %d+%d es: %d\n",numero,numero2,suma);
             printf("el resultado del %d-%d es: %d\n",numero,numero2,resta);
-            printf("el resultado del %d/%d es: %d\n",numero,numero2,division);
+            if(division==-1)
+            {
+             printf("No se puede dividir por 0");
+            }
+            printf("el resultado del %f/%f es: %f\n",numero,numero2,division);
             printf("el resultado del %d*%d es: %d\n",numero,numero2,multiplicacion);
             break;
         case 5:

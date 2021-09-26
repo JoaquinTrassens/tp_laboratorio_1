@@ -19,13 +19,16 @@ int restar(int primerOperando, int segundoOperando)
     return resultado;
 }
 
-int dividir(int primerOperando, int segundoOperando)
+
+
+float dividir(int primerOperando, int segundoOperando)
 {
-    int resultado;
-    resultado=primerOperando/segundoOperando;
+    float resultado;
     if(segundoOperando==0)
     {
-    	return printf("no es posible dividir por 0");
+    	return -1;
+    }else{
+    resultado=(float)(primerOperando/segundoOperando);
     }
     return resultado;
 }
@@ -35,5 +38,4 @@ int multiplicar(int primerOperando, int segundoOperando)
     int resultado=primerOperando*segundoOperando;
     return resultado;
 }
-
 

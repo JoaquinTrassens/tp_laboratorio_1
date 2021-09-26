@@ -10,7 +10,7 @@
 
 int sumar(int primerOperando, int segundoOperando);
 int restar(int primerOperando, int segundoOperando);
-int dividir(int primerOperando, int segundoOperando);
+float dividir(int primerOperando, int segundoOperando);
 int multiplicar(int primerOperando, int segundoOperando);
 
 
